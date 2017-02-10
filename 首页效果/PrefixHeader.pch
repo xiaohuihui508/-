@@ -1,0 +1,32 @@
+//
+//  PrefixHeader.pch
+//  首页效果
+//
+//  Created by mac on 17/2/10.
+//  Copyright © 2017年 mac. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+
+#import "UIColor+UIColorExt.h"
+
+//自定义Log
+#ifdef DEBUG
+#define FULog(...) NSLog(__VA_ARGS__)
+#else
+#define FULog(...)
+#endif
+
+//宽高
+#define SCREEN_W ([[UIScreen mainScreen] bounds].size.width)
+#define SCREEN_H ([[UIScreen mainScreen] bounds].size.height)
+
+//cell等比高
+#define cell_height(i) SCREEN_W*((i)/375.0f)
+
+#define XLColor(r, g, b) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:1]
+
+
+#endif

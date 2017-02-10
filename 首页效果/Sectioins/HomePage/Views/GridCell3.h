@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  GridCell3.h
 //  首页效果
 //
 //  Created by mac on 17/2/10.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface GridCell3 : UICollectionViewCell
 
 @end
-
